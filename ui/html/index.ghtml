@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=980, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Video Player</title>
+
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/videoweb.css">
+
+    <script src="assets/scripts/jquery.min.js"></script>
+    <script src="assets/scripts/videoweb.js"></script>
+
+</head>
+<body>
+    <div id="videos">
+        <ul>
+            {{range $val := .}}
+                <li><a data="{{$val}}">{{$val}}</a></li>
+            {{end}}
+        </ul>
+     </div>
+     
+     <div id="overlay">
+        <div class="modal">
+           <div id="close">X</div>
+           <div id="loader"></div>
+        </div>
+     </div>
+    <ul>
+</body>
+</html>
